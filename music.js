@@ -1,6 +1,9 @@
-var music = new Audio("./Rasmus Gozzi - RID MIG SOM EN DALAHÄST.mp3");
+var music = new Audio("Rasmus Gozzi - RID MIG SOM EN DALAHÄST.mp3");
 music.loop = true;
 
+$(document).one("click", function () {
+  music.play();
+});
 
 $(document).ready(function() {
     // add click handler to the music button
@@ -13,6 +16,4 @@ $(document).ready(function() {
             $(this).find("img").attr("src", "mute.png");
         }
     });
-    // start the music
-    music.play();
 });
