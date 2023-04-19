@@ -1,13 +1,11 @@
 var imageUrls = [];
 
 $.ajax({
-  url: "bungaimg/",
+  url: "https://api.github.com/repos/username/repo/contents/bungaimg",
   success: function (data) {
-    $(data)
-      .find("a")
-      .attr("href", function (i, val) {
-        imageUrls.push(val);
-      });
+    $.each(data, function (i, file) {
+      imageUrls.push(file.download_url);
+    });
   },
   async: false,
 });
