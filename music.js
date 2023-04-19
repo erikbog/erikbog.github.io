@@ -1,4 +1,4 @@
-var music = new Audio("Rasmus Gozzi - RID MIG SOM EN DALAHÄST.mp3");
+var music = new Audio("./Rasmus Gozzi - RID MIG SOM EN DALAHÄST.mp3");
 music.loop = true;
 
 
