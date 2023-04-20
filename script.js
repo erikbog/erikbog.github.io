@@ -8,6 +8,7 @@ $("#music-button").click(function() {
 // Define the function to hide the music and disclaimer elements after inactivity
 const hideElements = function() {
   $("#music-button").fadeOut();
+  $("body").css("cursor", "none");
   if (!$("#disclaimer:hover").length) $("#disclaimer").fadeOut();
 };
 
@@ -15,6 +16,7 @@ const hideElements = function() {
 const resetTimeout = function() {
   clearTimeout(timeout);
   $("#music-button, #disclaimer").fadeIn();
+  $("body").css("cursor", "auto");
   timeout = setTimeout(hideElements, 3000);
 };
 
