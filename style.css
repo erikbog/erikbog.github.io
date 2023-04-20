@@ -14,6 +14,14 @@ body {
   z-index: 0;
 }
 
+#falling-images img {
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
 #music-button {
   position: fixed;
   bottom: 5px;
@@ -21,6 +29,7 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+
 #disclaimer {
 	position: fixed;
 	bottom: 20px;
