@@ -62,11 +62,11 @@ function createFallingImage() {
             cursor: "pointer",
           });
 
-        mediaElement
+          mediaElement
           .appendTo("#falling-images")
           .animate(
             {
-              top: $(window).height() + "px",
+              top: $(window).height() + 300 + "px", // Increased the value here
               left: "+=" + (Math.random() * 100 - 50) + "px",
             },
             Math.random() * 10000 + 5000,
