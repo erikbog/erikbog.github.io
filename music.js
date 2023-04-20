@@ -1,13 +1,14 @@
 var music = new Audio("./music.mp3");
 music.loop = true;
 
-$(document).one("click", function () {
-  music.play();
-  //   change the volume to 0.1
-  music.volume = 0.3;
-});
+document.addEventListener("DOMContentLoaded", function() {
+  // start playing the music as soon as the user has interacted with the page
+  document.addEventListener("click", function() {
+    music.play();
+    // change the volume to 0.3
+    music.volume = 0.3;
+  }, { once: true });
 
-$(document).ready(function () {
   // add click handler to the music button
   $("#music-button").click(function () {
     if (music.muted) {
