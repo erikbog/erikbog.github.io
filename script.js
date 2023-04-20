@@ -1,20 +1,9 @@
 // all files in bungaimg folder should be put in imageUrls array
-var imageUrls = [
-	  "bungaimg/1.jpg",
-	  "bungaimg/2.jpg",
-	  "bungaimg/3.jpg",
-	  "bungaimg/4.jpg",
-	  "bungaimg/5.jpg",
-	  "bungaimg/6.jpg",
-	  "bungaimg/7.jpg",
-	  "bungaimg/8.jpg",
-	  "bungaimg/9.jpg",
-	  "bungaimg/10.jpg",
-	  "bungaimg/11.jpg",
-	  "bungaimg/12.jpg",
-	  "bungaimg/13.jpg",
-	  "bungaimg/14.jpg",
-];
+var imageUrls = [];
+
+for (var i = 2; i <= 39; i++) {
+  imageUrls.push("bungaimg/" + i + ".jpg");
+}
 
 
 var maxImageWidth = 300;
