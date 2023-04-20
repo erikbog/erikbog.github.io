@@ -12,7 +12,9 @@ var videoThumbnails = [
   "Snapchat-1426759521.jpg",
   "Snapchat-1870895666.jpg",
   "Snapchat-2074205843.jpg",
+  "VID_20211227_211605.jpg",
   "Snapchat-546945270.jpg",
+  "Snapchat-42485206.jpg",
 ];
 
 // New helper function to check if the file name is a video thumbnail
