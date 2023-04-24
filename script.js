@@ -27,3 +27,17 @@ let timeout = setTimeout(hideElements, 3000);
 $(document).on("mousemove touchstart", function() {
   resetTimeout();
 });
+
+$("#music-controls").hover(
+  function () {
+    $("#volume-slider").fadeIn();
+  },
+  function () {
+    $("#volume-slider").fadeOut();
+  }
+);
+
+$("#volume-slider").on("input", function () {
+  const volume = $(this).val();
+  music.volume = volume;
+});
