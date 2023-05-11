@@ -41,3 +41,9 @@ $("#volume-slider").on("input", function () {
   const volume = $(this).val();
   music.volume = volume;
 });
+
+$("#playDiv").click(function () {
+  startMusic();
+  $(this).hide();
+}
+);
